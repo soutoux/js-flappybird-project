@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Slackey&display=swap");
+
 body {
   margin: 0;
   display: flex;
@@ -30,23 +32,47 @@ body {
   font-size: 48px;
   color: #fff;
   text-shadow: 2px 2px 4px #000;
-  border: 2px solid #000;
+  font-family: "Slackey", cursive;
   padding: 10px;
 }
 
 #menu button,
 #gameOver button {
-  padding: 10px 20px;
+  padding: 15px 30px;
   font-size: 24px;
   cursor: pointer;
+  background-color: #ffeb3b;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-family: "Rubik Spray Paint", cursive;
+  text-transform: uppercase;
+  box-shadow: 0 4px #c9b037;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Garante que o texto fique em uma linha */
+}
+
+#menu button:hover,
+#gameOver button:hover {
+  background-color: #ffd700;
+}
+
+#menu button:active,
+#gameOver button:active {
+  box-shadow: 0 2px #c9b037;
+  transform: translateY(2px);
 }
 
 #score {
   position: absolute;
-  top: 10px;
+  top: 30%;
   left: 50%;
-  transform: translateX(-50%);
-  font-size: 32px;
+  transform: translate(-50%, -50%);
+  font-size: 140px;
   color: #fff;
   text-shadow: 2px 2px 4px #000;
+  font-family: "Rubik Spray Paint", cursive;
+  opacity: 0.25;
+  display: none; /* Esconde o score inicialmente */
+  z-index: 1; /* Coloca o score na frente do background */
 }

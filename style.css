@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #70c5ce;
+}
+
+#game-container {
+  position: relative;
+}
+
+#gameCanvas {
+  display: block;
+  background: url("assets/images/background.png") repeat-x;
+}
+
+#menu,
+#gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#menu h1,
+#gameOver h1 {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  border: 2px solid #000;
+  padding: 10px;
+}
+
+#menu button,
+#gameOver button {
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
